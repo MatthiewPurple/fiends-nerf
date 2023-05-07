@@ -38,7 +38,7 @@ public class FiendsNerf : MelonMod
                     __result = "Null: Ice/Light/Dark/Curse/Mind • Weak: Fire"; // Pale Rider
                     break;
                 case 202:
-                    __result = "Rpl: Phys • Drn: Elec • Null: Light/Dark/Mind • Str: Ailments • Weak Force"; // Mother Harlot
+                    __result = "Rpl: Phys • Drn: Elec • Null: Light/Dark • Str: Ailments • Weak Force"; // Mother Harlot
                     break;
             }
         }
