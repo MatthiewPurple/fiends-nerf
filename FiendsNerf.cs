@@ -60,7 +60,9 @@ public class FiendsNerf : MelonMod
         datAisyo.tbl[201][8] = 50; // Resist Curse
         datAisyo.tbl[201][9] = 100; // Neutral to Nerve
         datAisyo.tbl[201][10] = 65536; // Null Mind
-        tblSkill.fclSkillTbl[201].Event[3] = tblSkill.fclSkillTbl[201].Event[4]; // Removes Prayer from Daisoujou's upcoming skills
+
+        // Removes Prayer from Daisoujou's upcoming skills
+        tblSkill.fclSkillTbl[201].Event[3] = tblSkill.fclSkillTbl[201].Event[4];
         tblSkill.fclSkillTbl[201].Event[4] = tblSkill.fclSkillTbl[201].Event[5];
 
 
