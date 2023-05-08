@@ -3,7 +3,7 @@ using HarmonyLib;
 using Il2Cpp;
 using fiends_nerf;
 
-[assembly: MelonInfo(typeof(FiendsNerf), "Fiends nerf", "1.0.0", "Matthiew Purple")]
+[assembly: MelonInfo(typeof(FiendsNerf), "Fiends nerf", "1.0.1", "Matthiew Purple")]
 [assembly: MelonGame("アトラス", "smt3hd")]
 
 namespace fiends_nerf;
@@ -60,6 +60,9 @@ public class FiendsNerf : MelonMod
         datAisyo.tbl[201][8] = 50; // Resist Curse
         datAisyo.tbl[201][9] = 100; // Neutral to Nerve
         datAisyo.tbl[201][10] = 65536; // Null Mind
+        tblSkill.fclSkillTbl[201].Event[3] = tblSkill.fclSkillTbl[201].Event[4]; // Removes Prayer from Daisoujou's upcoming skills
+        tblSkill.fclSkillTbl[201].Event[4] = tblSkill.fclSkillTbl[201].Event[5];
+
 
         // Changes Hell Biker's affinities
         datAisyo.tbl[200][2] = 2147483798; // Weak to Ice
